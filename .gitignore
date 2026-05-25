@@ -1,0 +1,19 @@
+# Rust build output
+/target/
+
+# Local app output
+/export/
+/~/
+
+# Local Zotero data if copied into the repo
+/zotero.sqlite*
+/storage/
+
+# Local Codex/session files
+/.codex
+
+# Editor and OS files
+.DS_Store
+*.swp
+*.swo
+*~

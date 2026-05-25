@@ -1,0 +1,16 @@
+[package]
+name = "zotero_exporter_tui"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.87"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+clap_complete = { version = "4", features = ["unstable-dynamic"] }
+crossterm = "0.28"
+ratatui = "0.29"
+rusqlite = { version = "0.32", features = ["bundled"] }
+walkdir = "2"
+# ratatui pulls this transitively; pin below 0.3.11 for rustc 1.87 compatibility.
+instability = "=0.3.10"
